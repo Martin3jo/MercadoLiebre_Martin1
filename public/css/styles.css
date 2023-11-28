@@ -121,15 +121,28 @@ a {
 .main-section-descripcion {
   font-size: 16px;
   display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.main-section-descripcion:hover {
+  opacity: 1;
 }
 .main-article {
   margin-bottom: 10px;
   text-align: center;
+  cursor: pointer;
+}
+.main-article:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 .logo-envio {
   color: #39b54a;
 
   border-color: #39b54a;
+  transition: transform 0.3s;
+}
+.logo-envio:hover {
+  transform: rotate(-90deg);
 }
 .caja-articulo {
   border-top: 1px solid #ebebeb;
@@ -168,6 +181,22 @@ a {
 .form-button:hover {
   transform: scale(1.1);
   cursor: pointer;
+}
+.form-button-login {
+  background-color: #1259c3;
+  border: none;
+
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.form-button-login a {
+  color: #ebebeb;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+.form-button-login:hover {
+  background-color: #0022aa;
 }
 .form-input-foto {
   cursor: pointer;
@@ -297,5 +326,16 @@ footer i {
     display: flex;
     flex-direction: column;
     align-items: stretch;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .section-1 {
+    display: flex;
+  }
+  .section-2 {
+    display: flex;
+    justify-content: flex-start;
   }
 }

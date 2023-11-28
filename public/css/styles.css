@@ -32,6 +32,9 @@ li a {
   color: black;
   padding: 0px 7px;
 }
+a {
+  text-decoration: none;
+}
 
 /*Estilos en el header*/
 .fa-search:before {
@@ -135,15 +138,39 @@ li a {
   position: relative;
 }
 .form-registro {
-  padding: 10px;
-  width: 50%;
+  padding: 20px 15px;
+  background-color: #eac926;
+  margin: 10px 0px;
 }
 .div-form {
-  padding-bottom: 5px;
+  margin-bottom: 15px;
 }
-.div-form-checkbox {
-  display: flex;
-  flex-direction: column;
+.div-form label {
+  margin-bottom: 5px;
+  font-style: italic;
+  display: block;
+  font-weight: bold;
+}
+.form-input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.form-button {
+  background-color: #1259c3;
+  border: none;
+
+  color: #ebebeb;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.form-button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.form-input-foto {
+  cursor: pointer;
 }
 .caja-articulo .logo-envio {
   display: block;
@@ -216,6 +243,15 @@ footer i {
   .menu-2 {
     display: flex;
   }
+  .form-input {
+    width: 40%;
+  }
+  .form-registro {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
 }
 
 @media (min-width: 769px) {
@@ -252,5 +288,14 @@ footer i {
     padding: 0px;
     border-radius: 0px;
     border: none;
+  }
+  .form-input {
+    width: 40%;
+  }
+  .form-registro {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
   }
 }

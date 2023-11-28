@@ -74,7 +74,12 @@
       <form class="form-registro" action="" method="post">
         <div class="div-form">
           <label for="nombre">Nombre:</label>
-          <input type="text" name="nombre" placeholder="Ingrese su Nombre" />
+          <input
+            type="text"
+            name="nombre"
+            placeholder="Ingrese su Nombre"
+            class="form-input"
+          />
         </div>
         <div class="div-form">
           <label for="apellido">Apellido:</label>
@@ -82,15 +87,26 @@
             type="text"
             name="apellido"
             placeholder="Ingrese su Apellido"
+            class="form-input"
           />
         </div>
         <div class="div-form">
           <label for="usuario">Usuario:</label>
-          <input type="text" name="usuario" placeholder="Ingrese su Usuario" />
+          <input
+            type="text"
+            name="usuario"
+            placeholder="Ingrese su Usuario"
+            class="form-input"
+          />
         </div>
         <div class="div-form">
           <label for="email">Email:</label>
-          <input type="email" name="email" placeholder="Ingrese su Email" />
+          <input
+            type="email"
+            name="email"
+            placeholder="Ingrese su Email"
+            class="form-input"
+          />
         </div>
         <div class="div-form">
           <label for="nacimiento">Fecha de Nacimiento:</label>
@@ -107,20 +123,21 @@
             type="text"
             name="domicilio"
             placeholder="Ingrese su Domicilio"
+            class="form-input"
           />
         </div>
         <div class="div-form">
           <label for="radiobutton">¿Que desea hacer?</label>
-          <br />
+
           <label for="comprar">Comprar</label>
           <input type="radio" name="opcion" value="comprar" />
           <label for="Vender">Vender</label>
           <input type="radio" name="opcion" value="Vender" />
         </div>
         <div class="div-form">
-          <div class="div-form-checkbox">
+          <div>
             <label for="categorias">Seleccione las categorias que desee</label>
-            <br />
+
             <span
               ><input type="checkbox" name="electro" />
               <label for="electro">Electro</label></span
@@ -145,7 +162,13 @@
         </div>
         <div class="div-form">
           <label for="foto">Seleccione una foto de perfil</label>
-          <input type="file" name="foto" multiple accept=".jpg, .jpeg" />
+          <input
+            type="file"
+            name="foto"
+            multiple
+            accept=".jpg, .jpeg"
+            class="form-input-foto"
+          />
         </div>
         <div class="div-form">
           <label for="contraseña">Ingrese su contraseña:</label>
@@ -154,16 +177,21 @@
             name="contraseña"
             required
             placeholder="Contraseña"
+            class="form-input"
           />
         </div>
         <div class="div-form">
-          <button type="submit">Confirmar contraseña</button>
+          <button type="submit" class="form-button">
+            Confirmar contraseña
+          </button>
         </div>
         <div class="div-form">
-          <button type="submit"><a href="./home.html"></a>Enviar</button>
+          <button type="submit" class="form-button">
+            <a href="./" class="form-button">Enviar</a>
+          </button>
         </div>
         <div class="div-form">
-          <button type="reset">Eliminar datos</button>
+          <button type="reset" class="form-button">Eliminar datos</button>
         </div>
       </form>
     </main>
